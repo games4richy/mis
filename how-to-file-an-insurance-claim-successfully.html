@@ -717,6 +717,91 @@
                     <span class="tag">Home Insurance</span>
                 </div>
                 
+                <a href="https://ziphynet.com/download/dl-downhill-domination" target="_blank"><img src="/dl.png" alt="Does Car Insurance Cover Engine Failure" style="width: 100%;"></a>
+
+                <div class="download-scroll-indicator">
+    <i class="fas fa-download"></i>
+    <span id="scrollText">Scroll Down to Download</span>
+    <div class="chevrons">
+        <i class="fas fa-chevron-down"></i>
+        <i class="fas fa-chevron-down"></i>
+    </div>
+</div>
+<script>
+(function () {
+    const translations = {
+        // English-speaking countries
+        en: "Scroll Down to Download",
+
+        // Indonesia
+        id: "Gulir ke bawah untuk mengunduh",
+
+        // Brazil
+        pt: "Role para baixo para baixar",
+
+        // India
+        hi: "डाउनलोड करने के लिए नीचे स्क्रॉल करें",
+
+        // Spanish-speaking countries
+        es: "Desplázate hacia abajo para descargar"
+    };
+
+    const lang = navigator.language || navigator.userLanguage;
+    const langCode = lang.toLowerCase();
+
+    let text = translations.en; // default fallback
+
+    if (langCode.startsWith("id")) text = translations.id;
+    else if (langCode.startsWith("pt")) text = translations.pt;
+    else if (langCode.startsWith("hi")) text = translations.hi;
+    else if (langCode.startsWith("es")) text = translations.es;
+
+    document.getElementById("scrollText").textContent = text;
+})();
+</script>
+
+<style>
+    .download-scroll-indicator {
+    position: fixed;
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #16a34a, #22c55e);
+    color: #ffffff;
+    padding: 12px 18px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: system-ui, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    z-index: 9999;
+}
+
+.chevrons {
+    display: flex;
+    flex-direction: column;
+}
+
+.chevrons i {
+    font-size: 12px;
+    line-height: 10px;
+    animation: pulseDown 1.6s infinite;
+}
+
+.chevrons i:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+@keyframes pulseDown {
+    0% { opacity: 0; transform: translateY(0); }
+    50% { opacity: 1; }
+    100% { opacity: 0; transform: translateY(6px); }
+}
+
+</style>
             </article>
         </div>
     </section>
