@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get Your Free Insurance Quote in 2 Minutes</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f7fb;
+      color:#1b1b1b;
+    }
+
+    .hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:15px;
+    }
+
+    .container{
+      background:#ffffff;
+      max-width:1100px;
+      width:100%;
+      border-radius:18px;
+      overflow:hidden;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      box-shadow:0 10px 40px rgba(0,0,0,0.08);
+      align-items:stretch;
+    }
+
+    .hero-image{
+      background:url('https://mathsinsure.com/img/quote-2min.webp') center/cover no-repeat;
+      min-height:420px;
+    }
+
+    .content{
+      padding:40px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      gap:15px;
+    }
+
+    .badge{
+      background:#e8f1ff;
+      color:#0a58ca;
+      display:inline-block;
+      padding:6px 14px;
+      border-radius:30px;
+      font-size:13px;
+      font-weight:bold;
+      width:fit-content;
+    }
+
+    h1{
+      font-size:42px;
+      line-height:1.2;
+      color:#102542;
+    }
+
+    p{
+      font-size:16px;
+      line-height:1.6;
+      color:#555;
+    }
+
+    .buttons{
+      display:flex;
+      gap:12px;
+      margin-top:10px;
+    }
+
+    .btn{
+      text-decoration:none;
+      padding:14px 22px;
+      border-radius:10px;
+      font-size:15px;
+      font-weight:bold;
+      transition:0.3s ease;
+      display:inline-block;
+      text-align:center;
+      white-space:nowrap;
+    }
+
+    .btn-primary{
+      background:#0a58ca;
+      color:#fff;
+    }
+
+    .btn-primary:hover{
+      background:#084298;
+    }
+
+    .btn-secondary{
+      border:2px solid #0a58ca;
+      color:#0a58ca;
+      background:#fff;
+    }
+
+    .btn-secondary:hover{
+      background:#0a58ca;
+      color:#fff;
+    }
+
+    /* MOBILE FIX: keep everything above fold */
+    @media(max-width:900px){
+      .container{
+        grid-template-columns:1fr;
+      }
+
+      .hero-image{
+        min-height:220px;
+      }
+
+      .content{
+        padding:25px;
+      }
+
+      h1{
+        font-size:30px;
+      }
+
+      .buttons{
+        flex-direction:column;
+      }
+
+      .btn{
+        width:100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="container">
+
+      <div class="hero-image"></div>
+
+      <div class="content">
+
+        <span class="badge">Trusted Insurance Coverage</span>
+
+        <h1>Get Your Free Insurance Quote in 2 Minutes</h1>
+
+        <p>
+          Compare affordable insurance plans and find the right coverage for your needs.
+          Fast, secure, and completely free to get started today.
+        </p>
+
+        <div class="buttons">
+          <a href="https://mathsinsure.com/free-insurance-quote-online" class="btn btn-primary">Apply Now</a>
+          <a href="https://mathsinsure.com/free-insurance-quote-online" class="btn btn-secondary">Learn More</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
